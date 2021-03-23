@@ -15,12 +15,12 @@
 
 <div class="container">
     <div class="row">
-        <!-- Looping through news -->
+        <!-- Looping through  -->
         {% for image in images %}
 
 
-        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 padding-0 hover ">
-            <img src="{{image.image.url}}" class=" img img-responsive" data-toggle="modal" data-target="#{{image.id}}">
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 hover ">
+            <img src="{{image.image.url}}" class="img img-responsive" data-toggle="modal" data-target="#{{image.id}}">
         </div>
 
 
@@ -55,20 +55,20 @@
                     <div class="modal-footer">
                         <!-- Target -->
                         <div class="form-group row">
-                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 padding-1">
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
                                 <input id="{{image.id}}-url" class="form-control input-md responsive" type="text" value="{{ALLOWED_HOSTS}}{{image.image.url}}">
                             </div>
 
 
-                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 padding-2">
-                                <button class="btn btn-secondary" onclick="copyToClipboard('#{{image.id}}-url')">Copy</button>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                                <button class=" btn btn-secondary " onclick="copyToClipboard( '#{{image.id}}-url') ">Copy</button>
                             </div>
                         </div>
 
 
 
-                        <div class="text-center">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <div class="text-center ">
+                            <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
                         </div>
                     </div>
                 </div>
@@ -78,8 +78,8 @@
         {% endfor %}
     </div>
 
-    <!-- <input id="t1" type="text"/>
-      <button onclick="copyToClipboard('#t1')">Copy</button> -->
+    <!-- <input id="t1 " type="text "/>
+      <button onclick="copyToClipboard( '#t1') ">Copy</button> -->
 
 </div>
 {% endblock %}

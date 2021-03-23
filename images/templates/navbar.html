@@ -10,7 +10,7 @@
 
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark default-color">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(56, 118, 233);">
 
         <!-- Navbar brand -->
         <a class="navbar-brand" href="{% url 'Images' %}" style="font-size:28px;">Gallery</a>
@@ -27,7 +27,7 @@
             <!-- Links -->
 
             <div class="col-sm-4 col-md-4 " style="margin-left: 600px;">
-                <form class="navbar-form" role="search" action="{% url 'search_results'%}">
+                <form class="navbar-form" role="search">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search Image" name="image">
                         <div class="input-group-btn">
@@ -37,6 +37,8 @@
                 </form>
             </div>
             <!-- Collapsible content -->
+
+            <!-- action="{url 'search_results'}" -->
 
     </nav>
     <!--/.Navbar-->
